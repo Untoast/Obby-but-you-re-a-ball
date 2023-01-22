@@ -1,0 +1,28 @@
+local currentstage = game:GetService("Players").LocalPlayer.PlayerGui.stage.Frame.Stage.Text
+local nextstage = currentstage + 1
+local nsco = Game:GetService("Workspace").Checkpoints:FindFirstChild(nextstage);
+local nscop = nsco.Checkpoint.Position
+local Workspace = Game:GetService("Workspace")
+local LPN = game:GetService("Players").LocalPlayer.Name
+local WPO = Workspace:FindFirstChild(LPN)
+currentstage = game:GetService("Players").LocalPlayer.PlayerGui.stage.Frame.Stage.Text
+nextstage = currentstage + 1
+nsco = Game:GetService("Workspace").Checkpoints:FindFirstChild(nextstage);
+nscop = nsco.Checkpoint.Position
+print(currentstage)
+print(nextstage)
+print(nsco)
+print(nscop)
+print(WPO.Sphere.Position)
+WPO.Sphere.Position = nscop
+wait(0.1)
+WPO.Humanoid.Health = 0
+currentstage = game:GetService("Players").LocalPlayer.PlayerGui.stage.Frame.Stage.Text
+nextstage = currentstage + 1
+nsco = Game:GetService("Workspace").Checkpoints:FindFirstChild(nextstage);
+nscop = nsco.Checkpoint.Position
+print(currentstage)
+print(nextstage)
+print(nsco)
+print(nscop)
+print(WPO.Sphere.Position)
