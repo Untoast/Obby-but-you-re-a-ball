@@ -11,6 +11,8 @@ local ChallSec1 = ChallTab:NewSection("TP to Obbys")
 local ChallSec2 = ChallTab:NewSection("Finish Obbys")
 local MiscTab = MainWin:NewTab("Misc")
 local MiscSec = MiscTab:NewSection("Misc")
+local CreditsTab = MainWin:NewTab("Credits")
+local CreditsSec = CreditsTab:NewSection("Credits:")
 local currentstage = game:GetService("Players").LocalPlayer.PlayerGui.stage.Frame.Stage.Text
 local nextstage = currentstage + 1
 local Workspace = Game:GetService("Workspace")
@@ -74,6 +76,8 @@ end)
 MiscSec:NewButton("Load Infinite Yield", "Loads the Infinite Yield script.", function()
     loadstring(Game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source", true))()
 end)
+--Credits Tab
+CreditsSec:NewLabel("Discord: Untoast#0001")
 
 
 game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Injected", Text = "Script successfully injected! Made by untoast."})
