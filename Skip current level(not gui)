@@ -15,8 +15,9 @@ print(nsco)
 print(nscop)
 print(WPO.Sphere.Position)
 WPO.Sphere.Position = nscop
-wait(0.1)
-WPO.Humanoid.Health = 0
+WPO.Head.Position = nscop
+WPO.Torso.Position = nscop
+WPO.HumanoidRootPart.Position = nscop
 currentstage = game:GetService("Players").LocalPlayer.PlayerGui.stage.Frame.Stage.Text
 nextstage = currentstage + 1
 nsco = Game:GetService("Workspace").Checkpoints:FindFirstChild(nextstage);
